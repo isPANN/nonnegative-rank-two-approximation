@@ -1,0 +1,7 @@
+ℹ [1808/1809] Built Stability (10s)
+info: Stability.lean:94:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:95:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:96:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:98:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:100:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1809 jobs).

@@ -1,0 +1,1 @@
+{"source": {"variables": [], "clauses": []}, "target": {"X": [[0]], "tau": 0}, "yes": true, "witness": {"W": [["0.0", "0.0"]], "H": [["0.0"], ["0.0"]]}, "recovery_calls": 2}

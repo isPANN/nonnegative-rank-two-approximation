@@ -1,0 +1,2 @@
+{"formulas": 106, "maxcut_partitions": 48416, "accepted_witnesses": 442, "NAE_composition": "pass"}
+{"matching_graphs": 67, "threshold_queries": 290, "all_partitions": 36830, "accepted_cuts": 1428, "matching_complement": "pass"}

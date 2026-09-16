@@ -1,0 +1,122 @@
+✖ [2429/2430] Building Stability (7.6s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/Stability.lean -o /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.olean -i /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.ilean -c /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.c --setup /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.setup.json --json
+error: Stability.lean:389:60: Invalid field `trace`: The environment does not contain `Function.trace`, so it is not possible to project the field `trace` from an expression
+  LinearMap.IsIdempotentElem.isProj_range ?m.213
+of type
+  IsIdempotentElem ?m.213 → LinearMap.IsProj (LinearMap.range ?m.213) ?m.213
+error: Stability.lean:389:56: Application type mismatch: The argument
+  hi
+has type
+  IsIdempotentElem p
+of sort `Prop` but is expected to have type
+  ?m.210 →ₗ[?m.208] ?m.210
+of sort `Type ?u.142` in the application
+  LinearMap.IsIdempotentElem.isProj_range hi
+error: Stability.lean:411:36: unsolved goals
+n : ℕ
+hn : 0 < n
+hnpos : 0 < ↑n
+⊢ ↑n * (√↑n)⁻¹ ^ 2 = 1
+warning: Stability.lean:412:52: This simp argument is unused:
+  ← inv_pow
+
+Hint: Omit it from the simp argument list.
+  simp [EuclideanSpace.real_norm_sq_eq, unitOnes, ←̵ ̵i̵n̵v̵_̵p̵o̵w̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Real.sq_sqrt (le_of_lt hnpos), ne_of_gt hnpos]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:413:6: This simp argument is unused:
+  Real.sq_sqrt (le_of_lt hnpos)
+
+Hint: Omit it from the simp argument list.
+  simp [EuclideanSpace.real_norm_sq_eq, unitOnes, ← inv_pow, R̵e̵a̵l̵.̵s̵q̵_̵s̵q̵r̵t̵ ̵(̵l̵e̵_̵o̵f̵_̵l̵t̵ ̵h̵n̵p̵o̵s̵)̵,̵ ̵ne_of_gt hnpos]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:413:37: This simp argument is unused:
+  ne_of_gt hnpos
+
+Hint: Omit it from the simp argument list.
+  simp [EuclideanSpace.real_norm_sq_eq, unitOnes, ← inv_pow, Real.sq_sqrt (le_of_lt h̵n̵p̵o̵s̵)̵,̵ ̵n̵e̵_̵o̵f̵_̵g̵t̵ ̵h̵n̵p̵o̵s̵]̵h̲n̲p̲o̲s̲)̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Stability.lean:422:17: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (?a ^ ?n)⁻¹
+in the target expression
+  (√↑n)⁻¹ ^ 2 = (↑n)⁻¹
+
+n : ℕ
+hn : 0 < n
+i j : Fin n
+⊢ (√↑n)⁻¹ ^ 2 = (↑n)⁻¹
+warning: Stability.lean:420:47: This simp argument is unused:
+  WithLp.toLp_ofLp
+
+Hint: Omit it from the simp argument list.
+  simp only [Matrix.vecMulVec_apply, unitOnes, W̵i̵t̵h̵L̵p̵.̵t̵o̵L̵p̵_̵o̵f̵L̵p̵,̵Matrix.smul_apply, Matrix.of_apply, smul_eq_mul,
+  ̲  ̲ ̲ ̲mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Stability.lean:426:37: unsolved goals
+n : ℕ
+R : Matrix (Fin n) (Fin n) ℝ
+⊢ (∑ i, (∑ i_1, R i i_1) ^ 2) * (√↑n)⁻¹ ^ 2 = (∑ i, (∑ j, R i j) ^ 2) * (↑n)⁻¹
+warning: Stability.lean:428:14: This simp argument is unused:
+  WithLp.toLp_ofLp
+
+Hint: Omit it from the simp argument list.
+  simp only [EuclideanSpace.real_norm_sq_eq, Matrix.toLpLin_apply,
+  ̵  ̵ ̵ ̵unitOnes, W̵i̵t̵h̵L̵p̵.̵t̵o̵L̵p̵_̵o̵f̵L̵p̵,̵ ̵Matrix.mulVec,
+  ̲  ̲ ̲ ̲dotProduct,
+  ̵  ̵ ̵ ̵← Finset.sum_mul, mul_pow, ← inv_pow, Real.sq_sqrt (Nat.cast_nonneg n),
+      ← Finset.sum_mul, div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:429:31: This simp argument is unused:
+  ← inv_pow
+
+Hint: Omit it from the simp argument list.
+  simp only [EuclideanSpace.real_norm_sq_eq, Matrix.toLpLin_apply,
+  ̵  ̵ ̵ ̵unitOnes, WithLp.toLp_ofLp,
+  ̲  ̲ ̲ ̲Matrix.mulVec, dotProduct,
+  ̵  ̵ ̵ ̵← Finset.sum_mul, mul_pow, ←̵ ̵i̵n̵v̵_̵p̵o̵w̵,̵ ̵Real.sq_sqrt (Nat.cast_nonneg n),
+      ← Finset.sum_mul, div_eq_mul_inv]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:429:42: This simp argument is unused:
+  Real.sq_sqrt (Nat.cast_nonneg n)
+
+Hint: Omit it from the simp argument list.
+  simp only [EuclideanSpace.real_norm_sq_eq, Matrix.toLpLin_apply, unitOnes, WithLp.toLp_ofLp,
+  ̲  ̲ ̲ ̲Matrix.mulVec, dotProduct, ← Finset.sum_mul, mul_pow, ← inv_pow, R̵e̵a̵l̵.̵s̵q̵_̵s̵q̵r̵t̵ ̵(̵N̵a̵t̵.̵c̵a̵s̵t̵_̵n̵o̵n̵n̵e̵g̵ ̵n̵)̵,̵← Finset.sum_mul,
+  ̲  ̲ ̲ ̲div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Stability.lean:441:77: unsolved goals
+n : ℕ
+P : Matrix (Fin n) (Fin n) ℝ
+hsym : P.transpose = P
+hidem : P * P = P
+u : EuclideanSpace ℝ (Fin n)
+hs : (Matrix.toEuclideanLin P).IsSymmetric
+hi : (Matrix.toEuclideanLin P) ((Matrix.toEuclideanLin P) u) = (Matrix.toEuclideanLin P) u
+⊢ ‖(Matrix.toEuclideanLin P) u‖ ^ 2 = ‖(Matrix.toEuclideanLin P) ((Matrix.toEuclideanLin P) u)‖ ^ 2
+info: Stability.lean:448:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:449:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:450:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:452:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:454:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:456:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:458:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:460:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:462:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:464:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:466:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:468:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Stability
+error: build failed

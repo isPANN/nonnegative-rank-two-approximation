@@ -1,0 +1,57 @@
+✖ [2429/2430] Building Stability (9.1s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/Stability.lean -o /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.olean -i /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.ilean -c /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.c --setup /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.setup.json --json
+warning: Stability.lean:416:32: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: Stability.lean:574:85: unsolved goals
+n : ℕ
+S : Finset (Fin n)
+c d : ℝ
+⊢ ((∑ i ∈ S, if i ∈ S then c else d) + ∑ i ∈ Sᶜ, if i ∈ S then c else d) = ↑S.card * c + ↑(n - S.card) * d
+error: Stability.lean:648:25: unsolved goals
+n : ℕ
+hn : 0 < n
+v : EuclideanSpace ℝ (Fin n)
+hzero : ∑ i, v.ofLp i = 0
+hunit : ‖v‖ = 1
+this : Nonempty (Fin n)
+imin : Fin n
+left✝¹ : imin ∈ Finset.univ
+hlo : ∀ x' ∈ Finset.univ, v.ofLp imin ≤ v.ofLp x'
+imax : Fin n
+left✝ : imax ∈ Finset.univ
+hhi : ∀ x' ∈ Finset.univ, v.ofLp x' ≤ v.ofLp imax
+hl : ∀ (i : Fin n), v.ofLp imin ≤ v.ofLp i
+hh : ∀ (i : Fin n), v.ofLp i ≤ v.ofLp imax
+h : v.ofLp imax ≤ v.ofLp imin
+heq : ∀ (i : Fin n), v.ofLp i = v.ofLp imin
+hz : ↑n * v.ofLp imin = 0
+hnne : ↑n ≠ 0
+hmin : v.ofLp imin = 0
+i : Fin n
+⊢ v.ofLp imin = 0
+warning: Stability.lean:648:46: This simp argument is unused:
+  hmin
+
+Hint: Omit it from the simp argument list.
+  simp [heq,̵ ̵h̵m̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Stability.lean:654:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:655:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:656:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:658:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:660:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:662:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:664:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:666:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:668:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:670:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:672:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:674:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Stability
+error: build failed

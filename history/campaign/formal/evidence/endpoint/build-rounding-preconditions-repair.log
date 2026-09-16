@@ -1,0 +1,30 @@
+✖ [2429/2430] Building Stability (5.9s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/Stability.lean -o /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.olean -i /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.ilean -c /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.c --setup /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.setup.json --json
+warning: Stability.lean:416:32: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: Stability.lean:574:85: unsolved goals
+n : ℕ
+S : Finset (Fin n)
+c d : ℝ
+h1 : (∑ i ∈ S, if i ∈ S then c else d) = ∑ _i ∈ S, c
+h2 : (∑ i ∈ Sᶜ, if i ∈ S then c else d) = ∑ _i ∈ Sᶜ, d
+⊢ Sᶜ.card = n - S.card ∨ d = 0
+info: Stability.lean:664:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:665:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:666:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:668:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:670:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:672:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:674:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:676:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:678:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:680:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:682:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:684:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Stability
+error: build failed

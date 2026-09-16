@@ -1,0 +1,8 @@
+[
+ {"source":{"variables":[],"clauses":[]},"yes":true},
+ {"source":{"variables":[0],"clauses":[[1]]},"yes":true},
+ {"source":{"variables":[0],"clauses":[[1],[-1]]},"yes":false},
+ {"source":{"variables":[0],"clauses":[[]]},"yes":false},
+ {"source":{"variables":[0,1,2],"clauses":[[1,2,3],[-1,-2],[-3]]},"yes":true},
+ {"source":{"variables":[0,1],"clauses":[[1,2],[1,-2],[-1,2],[-1,-2]]},"yes":false}
+]

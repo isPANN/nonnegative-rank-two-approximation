@@ -1,0 +1,3 @@
+{"fixture": "malformed-output", "rejected": true, "reason": "'X'"}
+{"fixture": "wrong-decision", "rejected": true, "reason": "{'source': {'variables': [0], 'clauses': [[1]]}, 'target': {'X': [[1, 0, 0], [0, 1, 0], [0, 0, 1]], 'tau': 0}, 'expected': True}"}
+{"fixture": "wrong-recovery", "rejected": true, "reason": "Invalid source recovery"}

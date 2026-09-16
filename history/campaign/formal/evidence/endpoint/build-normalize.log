@@ -1,0 +1,29 @@
+✖ [1808/1809] Building Stability (12s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/Stability.lean -o /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.olean -i /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.ilean -c /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.c --setup /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.setup.json --json
+error: Stability.lean:88:15: Function expected at
+  norm_sub_le v z
+but this term has type
+  ‖v - z‖ ≤ ‖v‖ + ‖z‖
+
+Note: Expected a function because this term is being applied to the argument
+  (NormedSpace.normalize z)
+error: Stability.lean:77:51: unsolved goals
+E : Type u_1
+inst✝¹ : NormedAddCommGroup E
+inst✝ : NormedSpace ℝ E
+v z : E
+hv : ‖v‖ = 1
+hz : z ≠ 0
+hnorm : ‖NormedSpace.normalize z‖ = 1
+hdiff : z - NormedSpace.normalize z = (‖z‖ - 1) • NormedSpace.normalize z
+hbound : ‖z - NormedSpace.normalize z‖ ≤ ‖v - z‖
+⊢ ‖v - NormedSpace.normalize z‖ ≤ 2 * ‖v - z‖
+info: Stability.lean:93:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:94:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:95:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:97:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:99:0: 'NMF.normalize_error' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Stability
+error: build failed

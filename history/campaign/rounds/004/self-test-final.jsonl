@@ -1,0 +1,4 @@
+{"target": {"X": [[0]], "tau": 0}, "yes": true, "witness": {"W": [["0", "0"]], "H": [["0"], ["0"]]}}
+{"target": {"X": [[1, 2], [3, 4]], "tau": 0}, "yes": true, "witness": {"W": [["1", "1"], ["2", "3"]], "H": [["0", "2"], ["1", "0"]]}}
+{"target": {"X": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], "tau": 0}, "yes": false, "witness": null}
+{"source_cases": 6, "target_cases": 3, "algebraic_and_negative_witness_regressions": "pass", "z3": "5.1.0"}

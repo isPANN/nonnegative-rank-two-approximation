@@ -1,0 +1,33 @@
+✖ [2242/2243] Building Stability (13s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/Stability.lean -o /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.olean -i /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.ilean -c /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.c --setup /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.setup.json --json
+error: Stability.lean:125:22: failed to synthesize instance of type class
+  HMul (Matrix (Fin n) (Fin n) ℝ) (Fin n → Fin n → ℝ) (Matrix ?m.29 ?m.29 ℝ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:160:13: unsolved goals
+n : ℕ
+P : Matrix (Fin n) (Fin n) ℝ
+ε : ℝ
+hsym : P.transpose = P
+hidem : P * P = P
+J : Matrix (Fin n) (Fin n) ℝ := fun x x_1 => 1
+X : Matrix (Fin n) (Fin n) ℝ := baseMatrix n ε
+R : Matrix (Fin n) (Fin n) ℝ := 1 - P
+hR : R * R = R
+hRt : R.transpose = R
+hXt : X.transpose = X
+hX : X = 1 + ε • J
+hJJ : J * J = ↑n • J
+hXX : X * X = 1 + (2 * ε + ↑n * ε ^ 2) • J
+⊢ ((1 - P) * fun x x_1 => 1).trace = ((1 - P) * fun x x_1 => 1).trace ∨ 2 * ε + ↑n * ε ^ 2 = 0
+info: Stability.lean:164:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:165:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:166:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:168:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:170:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:172:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Stability.lean:174:14: Unknown constant `NMF.projection_base_residual`
+error: Lean exited with code 1
+Some required targets logged failures:
+- Stability
+error: build failed

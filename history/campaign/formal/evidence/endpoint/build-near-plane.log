@@ -1,0 +1,132 @@
+✖ [2429/2430] Building Stability (13s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/Stability.lean -o /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.olean -i /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.ilean -c /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.c --setup /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.setup.json --json
+warning: Stability.lean:416:32: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: Stability.lean:495:44: linarith failed to find a contradiction
+n : ℕ
+hn : 0 < n
+Y : Matrix (Fin n) (Fin n) ℝ
+ε η : ℝ
+hε : 0 < ε
+hεn : ε * ↑n ≤ 1
+hη : 0 < η
+hηone : η < 1
+hgap : η < 2 * ε * ↑n + ε ^ 2 * ↑n ^ 2
+hrank : Y.rank ≤ 2
+herror : frobeniusSq (baseMatrix n ε - Y) ≤ ↑n - 2 + η
+hnpos : 0 < ↑n
+hen : 0 < ε * ↑n
+hr : Y.rank = 2
+P : Matrix (Fin n) (Fin n) ℝ
+hsym : P.transpose = P
+hidem : P * P = P
+hfix : P * Y = Y
+htrace : P.trace = 2
+u : EuclideanSpace ℝ (Fin n) := unitOnes n
+θ : ℝ := ‖u - (Matrix.toEuclideanLin P) u‖
+γ : ℝ := 2 * ε * ↑n + ε ^ 2 * ↑n ^ 2
+hu : ‖u‖ = 1
+hθsq : (∑ i, (∑ j, (1 - P) i j) ^ 2) / ↑n = θ ^ 2
+heq : ‖baseMatrix n ε - Y‖ ^ 2 = ↑n - 2 + (2 * ε * ↑n + ε ^ 2 * ↑n ^ 2) * θ ^ 2 + frobeniusSq (P * baseMatrix n ε - Y)
+hrespos : 0 ≤ ‖P * baseMatrix n ε - Y‖ ^ 2
+a✝ : η < (2 * ε * ↑n + ε ^ 2 * ↑n ^ 2) * θ ^ 2
+⊢ False
+failed
+error: Stability.lean:501:4: linarith failed to find a contradiction
+n : ℕ
+hn : 0 < n
+Y : Matrix (Fin n) (Fin n) ℝ
+ε η : ℝ
+hε : 0 < ε
+hεn : ε * ↑n ≤ 1
+hη : 0 < η
+hηone : η < 1
+hgap : η < 2 * ε * ↑n + ε ^ 2 * ↑n ^ 2
+hrank : Y.rank ≤ 2
+herror : frobeniusSq (baseMatrix n ε - Y) ≤ ↑n - 2 + η
+hnpos : 0 < ↑n
+hen : 0 < ε * ↑n
+hr : Y.rank = 2
+P : Matrix (Fin n) (Fin n) ℝ
+hsym : P.transpose = P
+hidem : P * P = P
+hfix : P * Y = Y
+htrace : P.trace = 2
+u : EuclideanSpace ℝ (Fin n) := unitOnes n
+θ : ℝ := ‖u - (Matrix.toEuclideanLin P) u‖
+γ : ℝ := 2 * ε * ↑n + ε ^ 2 * ↑n ^ 2
+hu : ‖u‖ = 1
+hθsq : (∑ i, (∑ j, (1 - P) i j) ^ 2) / ↑n = θ ^ 2
+heq : ‖baseMatrix n ε - Y‖ ^ 2 = ↑n - 2 + (2 * ε * ↑n + ε ^ 2 * ↑n ^ 2) * θ ^ 2 + frobeniusSq (P * baseMatrix n ε - Y)
+hrespos : 0 ≤ ‖P * baseMatrix n ε - Y‖ ^ 2
+hγθ : γ * θ ^ 2 ≤ η
+hγpos : 0 < γ
+this : 0 ≤ (2 * ε * ↑n + ε ^ 2 * ↑n ^ 2) * θ ^ 2
+a✝ : η < ‖P * baseMatrix n ε - Y‖ ^ 2
+⊢ False
+failed
+error: Stability.lean:520:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  inner ℝ u w
+in the target expression
+  2 - 2 * inner ℝ w u ^ 2 = 2 * θ ^ 2
+
+n : ℕ
+hn : 0 < n
+Y : Matrix (Fin n) (Fin n) ℝ
+ε η : ℝ
+hε : 0 < ε
+hεn : ε * ↑n ≤ 1
+hη : 0 < η
+hηone : η < 1
+hgap : η < 2 * ε * ↑n + ε ^ 2 * ↑n ^ 2
+hrank : Y.rank ≤ 2
+herror : frobeniusSq (baseMatrix n ε - Y) ≤ ↑n - 2 + η
+hnpos : 0 < ↑n
+hen : 0 < ε * ↑n
+hr : Y.rank = 2
+P : Matrix (Fin n) (Fin n) ℝ
+hsym : P.transpose = P
+hidem : P * P = P
+hfix : P * Y = Y
+htrace : P.trace = 2
+u : EuclideanSpace ℝ (Fin n) := unitOnes n
+θ : ℝ := ‖u - (Matrix.toEuclideanLin P) u‖
+γ : ℝ := 2 * ε * ↑n + ε ^ 2 * ↑n ^ 2
+hu : ‖u‖ = 1
+hθsq : (∑ i, (∑ j, (1 - P) i j) ^ 2) / ↑n = θ ^ 2
+heq : ‖baseMatrix n ε - Y‖ ^ 2 = ↑n - 2 + (2 * ε * ↑n + ε ^ 2 * ↑n ^ 2) * θ ^ 2 + frobeniusSq (P * baseMatrix n ε - Y)
+hrespos : 0 ≤ ‖P * baseMatrix n ε - Y‖ ^ 2
+hγθ : γ * θ ^ 2 ≤ η
+hγpos : 0 < γ
+hres : ‖P * baseMatrix n ε - Y‖ ≤ √η
+hpu : (Matrix.toEuclideanLin P) u ≠ 0
+w v : EuclideanSpace ℝ (Fin n)
+hw : ‖w‖ = 1
+hv : ‖v‖ = 1
+hvu : inner ℝ v u = 0
+huw : inner ℝ u w = ‖(Matrix.toEuclideanLin P) u‖
+hP : P = Matrix.vecMulVec w.ofLp w.ofLp + Matrix.vecMulVec v.ofLp v.ofLp
+Q : Matrix (Fin n) (Fin n) ℝ := Matrix.vecMulVec u.ofLp u.ofLp + Matrix.vecMulVec v.ofLp v.ofLp
+J : Matrix (Fin n) (Fin n) ℝ := Matrix.of fun x x_1 => 1
+hpyt : 1 ^ 2 = ‖(Matrix.toEuclideanLin P) u‖ ^ 2 + ‖u - (Matrix.toEuclideanLin P) u‖ ^ 2
+hPQ : P - Q = Matrix.vecMulVec w.ofLp w.ofLp - Matrix.vecMulVec u.ofLp u.ofLp
+⊢ 2 - 2 * inner ℝ w u ^ 2 = 2 * θ ^ 2
+info: Stability.lean:561:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:562:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:563:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:565:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:567:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:569:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:571:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:573:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:575:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:577:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:579:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:581:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Stability
+error: build failed

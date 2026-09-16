@@ -1,0 +1,16 @@
+⚠ [2242/2243] Built Stability (2.8s)
+warning: Stability.lean:105:45: This simp argument is unused:
+  Matrix.trace_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [frobeniusSq_trace, Matrix.transpose_add, Matrix.add_mul, Matrix.mul_add,
+  ̲  ̲ ̲ ̲Matrix.trace_add, h, h', M̵a̵t̵r̵i̵x̵.̵t̵r̵a̵c̵e̵_̵z̵e̵r̵o̵,̵ ̵add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Stability.lean:123:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:124:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:125:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:127:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:129:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:131:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2243 jobs).

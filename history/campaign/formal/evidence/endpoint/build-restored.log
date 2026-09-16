@@ -1,0 +1,371 @@
+✖ [1232/1233] Building Stability (7.1s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/Stability.lean -o /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.olean -i /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/Stability.ilean -c /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.c --setup /Users/xiweipan/Codes/reduction-research/campaigns/nonnegative-rank-two-approximation/formal/.lake/build/ir/Stability.setup.json --json
+error: Stability.lean:12:13: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:12:36: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:13:10: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.39
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:13:33: Type mismatch
+  n
+has type
+  ℕ
+but is expected to have type
+  ℝ
+error: Stability.lean:13:4: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:12:41: failed to synthesize instance of type class
+  HPow ℝ ℕ ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:15:10: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.78
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:16:14: failed to synthesize instance of type class
+  HMul ℝ ℝ ?m.90
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:20:8: Type mismatch
+  n
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  ℝ
+of sort `Type u_1`
+error: Stability.lean:15:4: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:16:8: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:17:16: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+info: Stability.lean:19:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: Stability.lean:16:52: unsolved goals
+⊢ {ℝ : Type u_1} → {n : ℕ} → (Fin n → ℝ) → ℝ → ℝ → sorry = 0 → sorry = 1 → AddCommMonoid ℝ
+info: Stability.lean:24:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: Stability.lean:20:31: unsolved goals
+ℝ : Type u_1
+n : ℕ
+v : Fin n → ℝ
+α β : ℝ
+hzero : sorry = 0
+hunit : sorry = 1
+⊢ n • sorry = sorry * α * β - 1
+warning: Stability.lean:21:17: This simp argument is unused:
+  Finset.sum_sub_distrib
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_s̵u̵b̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵add_distrib,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵← Finset.mul_sum, hzero, hunit, mul_zero, add_zero,
+          Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:21:41: This simp argument is unused:
+  Finset.sum_add_distrib
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_sub_distrib, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵a̵d̵d̵_̵d̵i̵s̵t̵r̵i̵b̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵← Finset.mul_sum, hzero, hunit, mul_zero, add_zero,
+          Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:22:8: This simp argument is unused:
+  ← Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵←̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵u̵l̵_̵s̵u̵m̵,̵ ̵hzero, hunit, mul_zero, add_zero,
+          Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:22:26: This simp argument is unused:
+  hzero
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵← Finset.mul_sum, hz̵e̵r̵o̵,̵ ̵h̵unit, mul_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲add_zero,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:22:33: This simp argument is unused:
+  hunit
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib, ← Finset.mul_sum, hzero, h̵u̵n̵i̵t̵,̵ ̵mul_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲add_zero, Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:22:40: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵← Finset.mul_sum, hzero, hunit,
+  ̲ m̵u̵l̵_̵z̵e̵r̵o̵,̵  ̲ ̲ ̲ ̲ ̲ ̲add_zero,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:22:50: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib, ← Finset.mul_sum, hzero, hunit,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲mul_zero, a̵d̵d̵_̵z̵e̵r̵o̵,̵Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Stability.lean:23:62: This simp argument is unused:
+  nsmul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib, ← Finset.mul_sum, hzero, hunit,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲mul_zero, add_zero, Finset.sum_const, Finset.card_univ, F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵ ̵n̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵]̵F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Stability.lean:26:45: failed to synthesize instance of type class
+  Neg ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:26:60: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:27:13: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.8
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:28:7: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.22
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:27:32: failed to synthesize instance of type class
+  Neg ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:27:5: failed to synthesize instance of type class
+  HSub ℝ ℝ ?m.18
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:29:2: Tactic `split_ifs` failed: no if-then-else conditions to split
+
+ℝ : Type u_1
+x α β : ℝ
+hlo : sorry
+hhi : sorry
+⊢ sorry
+error: Stability.lean:36:13: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:36:36: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:37:16: failed to synthesize instance of type class
+  Neg ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:37:38: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:38:12: Type mismatch
+  n
+has type
+  ℕ
+but is expected to have type
+  ℝ
+error: Stability.lean:38:12: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:39:20: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.62
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:39:4: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:39:4: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:36:41: failed to synthesize instance of type class
+  HPow ℝ ℕ ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:39:43: failed to synthesize instance of type class
+  Neg ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:39:10: failed to synthesize instance of type class
+  HSub ℝ ℝ (?m.78 i)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:41:14: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.109
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:45:8: Type mismatch
+  n
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  ℝ
+of sort `Type u_1`
+error: Stability.lean:45:31: Unknown identifier `endpoint_identity`
+error: Stability.lean:41:8: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:41:4: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:40:2: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:52:13: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:52:36: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:53:16: failed to synthesize instance of type class
+  Neg ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:53:38: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:54:21: failed to synthesize instance of type class
+  Neg ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:55:22: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:56:31: Type mismatch
+  n
+has type
+  ℕ
+but is expected to have type
+  ℝ
+error: Stability.lean:56:43: failed to synthesize instance of type class
+  HMul ℝ ℝ ?m.59
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:56:21: failed to synthesize instance of type class
+  LE ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:57:20: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.71
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:58:8: Type mismatch
+  n
+has type
+  ℕ
+but is expected to have type
+  ℝ
+error: Stability.lean:58:19: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.97
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:55:22: failed to synthesize instance of type class
+  OfNat ℝ 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ℝ
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:56:21: failed to synthesize instance of type class
+  Lattice ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:56:21: failed to synthesize instance of type class
+  AddGroup ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:57:4: failed to synthesize instance of type class
+  AddCommMonoid ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:52:41: failed to synthesize instance of type class
+  HPow ℝ ℕ ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:57:43: failed to synthesize instance of type class
+  Neg ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:57:10: failed to synthesize instance of type class
+  HSub ℝ ℝ (?m.87 i)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:59:33: Type mismatch
+  n
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  ℝ
+of sort `Type u_1`
+error: Stability.lean:59:44: failed to synthesize instance of type class
+  HAdd ℝ ℝ ?m.115
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:60:16: failed to synthesize instance of type class
+  OfNat ℝ 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ℝ
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Stability.lean:60:25: Type mismatch
+  n
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  ℝ
+of sort `Type u_1`
+error: Stability.lean:71:14: Unknown constant `NMF.endpoint_identity`
+info: Stability.lean:72:0: 'NMF.endpoint_distance' does not depend on any axioms
+info: Stability.lean:73:0: 'NMF.endpoint_rounding' does not depend on any axioms
+info: Stability.lean:75:0: 'NMF.nonnegative_endpoint_rounding' does not depend on any axioms
+error: Lean exited with code 1
+Some required targets logged failures:
+- Stability
+error: build failed

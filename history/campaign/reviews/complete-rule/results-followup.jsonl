@@ -1,0 +1,4 @@
+{"exact_composition_and_actual_witnesses": [{"clauses": [[1]], "accepted_literal_cuts": 1}, {"clauses": [[-1]], "accepted_literal_cuts": 1}, {"clauses": [[1], [-1]], "accepted_literal_cuts": 0}, {"clauses": [[1, -1]], "accepted_literal_cuts": 3}, {"clauses": [[1, 1, 1]], "accepted_literal_cuts": 1}, {"clauses": [[1, -2], [2]], "accepted_literal_cuts": 1}]}
+{"asymmetric_nonoptimal_witness": "passed"}
+{"large_valid_witness_returncode": 0, "stderr": ""}
+{"repeated_reducible_algebraic_roots": "passed"}
