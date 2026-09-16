@@ -42,11 +42,16 @@ correctness, priority and significance assessment remain outstanding.
 | Stability lemma | Complete `NMF.stability : NMF.StabilityClaim`; local Lean build, transitive axiom audit and fresh Lean kernel replay passed. |
 | Independent formal checking | Comparator and an independently implemented kernel have not run; deferred at the owner's request. |
 | Reduction correctness | `NMF.Reduction.correctness` proves output legality, YES/NO equivalence and recovery from every valid real factor pair, including exceptional source branches. Local build, axiom audit and fresh kernel replay passed. [Unified entry and scope](formal/README.md). |
-| Polynomial bounds and Python agreement | Not formalized. Complexity is outside the current requested scope. |
+| Forward-map complexity | Deterministic polynomial time, with polynomial output encoding length; established by the explicit construction and the [written bit-complexity argument](paper/proof.md#5-executable-recovery-and-complexity). |
+| Python agreement | Six exact forward-map comparisons pass; Python/Z3 implementation agreement is not formally proved. |
 | Executable checks | Finite tests include YES/NO inputs and algebraic, nonoptimal and large-coordinate witnesses. Nontrivial NMF verdicts use proof-assisted cut certificates, not unrestricted global NMF solves. |
 
-The Lean result proves mathematical correctness under Lean's foundations.
-Polynomial resource bounds and agreement with Python/Z3 remain outside that proof. See the
+The reduction combines Lean-checked mathematical correctness with a written
+polynomial-time analysis of the forward construction. For source encoding length
+$s$, the output has $O(s^2)$ entries, each with $O(\log(s+2))$ bits, and the
+construction uses polynomially many exact arithmetic operations. The complexity
+argument is checked directly from the construction; it is not encoded in Lean.
+See the
 [original verification report](history/campaign/work/verification.md) for test
 coverage and shared mathematical dependencies. Fresh export checks are recorded
 in [evidence](evidence/README.md).

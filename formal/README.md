@@ -64,12 +64,15 @@ nanoda verification remain deferred at the owner's request; neither was run here
 The trusted boundary includes `ReductionSpec` and its imports, which must also be
 reviewed for correspondence to the intended problem.
 
-## Scope not certified
+## Verification scope
 
 The theorem establishes mathematical correctness of the Lean construction and
-recovery function. It does not prove polynomial runtime or encoding size, which
-are outside the current request. It also does not verify JSON parsing, Python
-execution or Z3's algebraic-number decoder and comparisons. Differential checks
+recovery function. Polynomial runtime and output encoding bounds for the forward
+map are established by the [written construction analysis](../paper/proof.md#5-executable-recovery-and-complexity);
+these bounds are not encoded in Lean.
+
+The Lean proof does not verify JSON parsing, Python execution or Z3's
+algebraic-number decoder and comparisons. Differential checks
 are finite implementation evidence, not a proof of implementation agreement.
 Novelty and significance remain separate research judgments.
 

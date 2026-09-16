@@ -63,6 +63,8 @@ These finite checks do not prove implementation agreement or verify the Z3 decod
 ## Limits
 
 The complete theorem proves the mathematical Lean construction and real-valued
-recovery semantics. Polynomial resource bounds, the Python/Z3 implementation,
-novelty and independent formal checking are separate obligations. None is certified
-by this result. No local Docker or remote verifier was used.
+recovery semantics. The forward map's polynomial time and encoding bounds follow
+from the [written construction analysis](../../../paper/proof.md#5-executable-recovery-and-complexity),
+separately from this Lean proof. Python/Z3 implementation agreement, novelty and
+independent formal checking are not certified by these checks. No local Docker
+or remote verifier was used.
