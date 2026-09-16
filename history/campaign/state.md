@@ -63,9 +63,9 @@ complete proof, exact recovery, bit bounds and reproducibility limitations.
 
 Scope: the full arbitrary-witness stability lemma in Section 3 of
 [the mathematical proof](work/proof.md). The solution is
-`NMF.stability : NMF.StabilityClaim` in [Stability.lean](formal/Stability.lean).
-The fixed [Definitions](formal/Definitions.lean) and separate
-[Challenge](formal/Challenge.lean) retain the original target statement.
+`NMF.stability : NMF.StabilityClaim` in [Stability.lean](../../formal/Stability.lean).
+The fixed [Definitions](../../formal/Definitions.lean) and separate
+[Challenge](../../formal/Challenge.lean) retain the original target statement.
 The solution does not import the challenge.
 
 The theorem covers every nonnegative real square matrix Y of rank at most two
@@ -100,13 +100,13 @@ Lean 4.32.2 and Mathlib v4.32.2 are pinned through the standard Lake files.
 `lake build` passes without warnings. The transitive axiom audit for the final
 `NMF.stability` reports exactly `propext`, `Classical.choice`, `Quot.sound`.
 It contains no `sorryAx`, custom mathematical axiom or native-computation axiom.
-See [build.log](formal/evidence/stability/build.log).
+See [build.log](../../formal/evidence/stability/build.log).
 
 Fresh Lean kernel replay of the completed theorem passed with exit code 0 and
-no diagnostics. Its raw [kernel-replay.log](formal/evidence/stability/kernel-replay.log)
+no diagnostics. Its raw [kernel-replay.log](../../formal/evidence/stability/kernel-replay.log)
 is therefore empty. This replay covers the full stability theorem and its imports.
 The final challenge elaboration is recorded in
-[challenge.log](formal/evidence/stability/challenge.log). The challenge now contains only the full stability target. Its explicit
+[challenge.log](../../formal/evidence/stability/challenge.log). The challenge now contains only the full stability target. Its explicit
 specification placeholder is not accepted proof evidence.
 
 Commands, all run from `campaigns/nonnegative-rank-two-approximation/formal`:
@@ -119,7 +119,7 @@ lake env leanchecker --fresh Stability
 
 The installed replay executable is named `leanchecker`. Its fresh replay uses the
 Lean kernel; it is not an independently implemented checker.
-[comparator.json](formal/comparator.json) now selects the complete `NMF.stability`
+[comparator.json](../../formal/comparator.json) now selects the complete `NMF.stability`
 statement. Comparator statement matching in a separate clean environment and
 external nanoda checking have not run. The current host is macOS; Comparator,
 nanoda and landrun are not installed. The user explicitly deferred independent

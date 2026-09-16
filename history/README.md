@@ -2,10 +2,12 @@
 
 Imported on 2026-09-16 from the retained
 `reduction-research/campaigns/nonnegative-rank-two-approximation` campaign.
-The import preserves all 134 retained campaign files byte-for-byte, excluding
+The initial Git commit preserves all 134 retained campaign files byte-for-byte, excluding
 `.lake` dependency/build caches, Python bytecode, virtual environments and OS
-metadata. `campaign/` preserves the source directory layout and its timestamps
-where the filesystem supports them. Git commit dates start with the import.
+metadata. Git commit dates start with the import. The current tree keeps one formal project
+at `formal/` in the repository root. Earlier formalization attempts live in
+`history/formalization/`; identical copies of the final Lean project and its final
+logs were removed from `campaign/`. No unique historical file was discarded.
 
 ## Reading order
 
@@ -19,8 +21,8 @@ where the filesystem supports them. Git commit dates start with the import.
 | Round 3: cut perturbation | [Plan, exact checks and reflection](campaign/rounds/003/round.md) |
 | Round 4: full composition and recovery | [Plan, checks, failures and closure](campaign/rounds/004/round.md) |
 | Native agent review and repairs | [Review](campaign/reviews/complete-rule/review.md), [follow-up](campaign/reviews/complete-rule/review-followup.md), [manuscript review](campaign/reviews/complete-rule/manuscript-review.md) |
-| Formalization attempts and failures | [Raw logs and intermediate sources](campaign/formal/evidence/endpoint/) |
-| Completed local stability proof | [Final evidence](campaign/formal/evidence/stability/) and [state](campaign/state.md) |
+| Formalization attempts and failures | [Raw logs and intermediate sources](formalization/endpoint/) |
+| Completed local stability proof | [Final evidence](../formal/evidence/stability/) and [state](campaign/state.md) |
 
 Four discovery rounds were completed from a budget of twenty. Formalization and
 packaging are not additional discovery rounds. Round records contain experience
@@ -50,7 +52,7 @@ retained files, not for every interaction or transient edit made during discover
 Original dependency packages and build caches can be fetched through the pinned
 Lake and Python dependency files rather than stored as exploration evidence.
 
-The live paper, algorithm and Lean sources were copied from this snapshot.
+The live paper, algorithm and Lean sources were copied from the initial snapshot.
 Only packaging changes were applied: the paper's audit link now points into this
 archive, and the live large-coordinate regression locates its adjacent algorithm.
 The mathematical manuscript and proof sources were not changed.

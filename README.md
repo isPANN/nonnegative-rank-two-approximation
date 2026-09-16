@@ -88,7 +88,9 @@ discussions, projects, wiki and Actions are disabled. Corrections and new eviden
 are committed directly, preserving Git history.
 
 Git history begins with this archive import; it does not reconstruct earlier
-commits. `history/` preserves the available source records as an import snapshot.
+commits. The initial commit preserves the available source records as an import snapshot.
+`history/` retains exploration records; formalization attempts are grouped under
+`history/formalization/`, while the final Lean project appears only in `formal/`.
 Current reviewable artifacts live in `paper/`, `algorithm/` and `formal/`.
 Do not edit the snapshot to retroactively change what an earlier attempt claimed.
 No public release or open-source license is implied by this private archive.
