@@ -1,0 +1,69 @@
+ℹ [596/684] Replayed BooleanReduction
+info: BooleanReduction.lean:148:0: 'NMF.sat_iff_nae' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:149:0: 'NMF.nae_to_sat' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:151:0: 'NMF.padding_preserves_source' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:152:0: 'NMF.empty_clause_unsatisfiable' depends on axioms: [propext, Quot.sound]
+ℹ [2430/2439] Replayed Stability
+info: Stability.lean:771:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:772:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:773:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:775:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:777:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:779:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:781:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:783:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:785:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:787:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:789:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:791:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:793:0: 'NMF.stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2431/2439] Replayed Recovery
+info: Recovery.lean:71:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2432/2439] Replayed Perturbation
+info: Perturbation.lean:224:0: 'NMF.accepted_base_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:225:0: 'NMF.perturbation_loss_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:227:0: 'NMF.chosen_parameter_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:229:0: 'NMF.accepted_factor_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2433/2439] Replayed CutMatrix
+info: CutMatrix.lean:251:0: 'NMF.block_pairing_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:252:0: 'NMF.base_block_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:254:0: 'NMF.block_perturbed_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:255:0: 'NMF.block_has_nonnegative_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:257:0: 'NMF.integer_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:258:0: 'NMF.accepted_cut_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:259:0: 'NMF.cut_witness_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:261:0: 'NMF.integer_cut_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:263:0: 'NMF.identity_three_infeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:264:0: 'NMF.zero_target_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2434/2439] Replayed GraphReduction
+info: GraphReduction.lean:249:0: 'NMF.nae_graph_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:250:0: 'NMF.nae_graph_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:251:0: 'NMF.sat_graph_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:253:0: 'NMF.matching_density_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:254:0: 'NMF.chosen_matching_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:256:0: 'NMF.directed_cut_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:258:0: 'NMF.sat_graph_matrix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:260:0: 'NMF.padded_source_graph_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2436/2439] Replayed ReductionProof
+warning: ReductionProof.lean:39:45: Try `simp at hj` instead of `simpa using hj`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ReductionProof.lean:192:0: 'NMF.Reduction.integer_scale_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReductionProof.lean:194:0: 'NMF.Reduction.cut_target_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2437/2439] Built MatchingProof (9.8s)
+info: MatchingProof.lean:183:0: 'NMF.Reduction.cut_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:184:0: 'NMF.Reduction.cut_le_half_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:186:0: 'NMF.Reduction.mate_count_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:187:0: 'NMF.Reduction.mate_count_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:189:0: 'NMF.Reduction.matching_cut_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2438/2439] Built Reduction (1.3s)
+info: Reduction.lean:4:0: NMF.Reduction.forward (s : NMF.Reduction.Source) : NMF.Reduction.Target
+info: Reduction.lean:5:0: NMF.Reduction.recover (s : NMF.Reduction.Source) (W : Matrix (Fin (NMF.Reduction.forward s).size) (Fin 2) ℝ)
+  (H : Matrix (Fin 2) (Fin (NMF.Reduction.forward s).size) ℝ) : Fin s.numVars → Bool
+info: Reduction.lean:6:0: NMF.Reduction.Correctness : Prop
+info: Reduction.lean:8:0: 'NMF.padded_source_graph_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Reduction.lean:9:0: 'NMF.matching_density_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Reduction.lean:10:0: 'NMF.accepted_cut_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Reduction.lean:11:0: 'NMF.cut_witness_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Reduction.lean:12:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2439 jobs).

@@ -1,6 +1,6 @@
 name = "nmf_stability"
 version = "0.1.0"
-defaultTargets = ["Stability"]
+defaultTargets = ["Reduction"]
 
 [[require]]
 name = "mathlib"
@@ -15,3 +15,34 @@ name = "Definitions"
 
 [[lean_lib]]
 name = "Challenge"
+
+[[lean_lib]]
+name = "Recovery"
+
+[[lean_lib]]
+name = "BooleanReduction"
+
+[[lean_lib]]
+name = "Perturbation"
+
+[[lean_lib]]
+name = "CutMatrix"
+
+[[lean_lib]]
+name = "GraphReduction"
+
+[[lean_lib]]
+name = "ReductionSpec"
+
+[[lean_lib]]
+name = "Reduction"
+
+
+[[lean_lib]]
+name = "ReductionProof"
+
+[[lean_lib]]
+name = "MatchingProof"
+
+[[lean_lib]]
+name = "SourceGraphProof"

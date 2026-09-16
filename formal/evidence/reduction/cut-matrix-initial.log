@@ -1,0 +1,92 @@
+ℹ [2429/2438] Replayed Stability
+info: Stability.lean:771:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:772:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:773:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:775:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:777:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:779:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:781:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:783:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:785:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:787:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:789:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:791:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:793:0: 'NMF.stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2431/2438] Replayed Recovery
+info: Recovery.lean:71:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2433/2438] Replayed BooleanReduction
+info: BooleanReduction.lean:108:0: 'NMF.sat_iff_nae' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:109:0: 'NMF.nae_to_sat' depends on axioms: [propext, Quot.sound]
+ℹ [2435/2438] Replayed Perturbation
+info: Perturbation.lean:224:0: 'NMF.accepted_base_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:225:0: 'NMF.perturbation_loss_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:227:0: 'NMF.chosen_parameter_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:229:0: 'NMF.accepted_factor_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2437/2438] Building CutMatrix (6.5s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/CutMatrix.lean -o /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/CutMatrix.olean -i /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/CutMatrix.ilean -c /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/CutMatrix.c --setup /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/CutMatrix.setup.json --json
+error: CutMatrix.lean:24:4: unsolved goals
+case neg
+n : ℕ
+A : Matrix (Fin n) (Fin n) ℝ
+S : Finset (Fin n)
+i : Fin n
+hi : i ∉ S
+⊢ (∑ x, if x ∈ S then 0 else A i x * (↑(n - S.card))⁻¹) = (∑ j ∈ Sᶜ, A i j) * (↑(n - S.card))⁻¹
+error: CutMatrix.lean:17:64: unsolved goals
+n : ℕ
+A : Matrix (Fin n) (Fin n) ℝ
+S : Finset (Fin n)
+hrow :
+  ∀ (i : Fin n),
+    ∑ j, A i j * blockMatrix S 0 i j =
+      if i ∈ S then (↑S.card)⁻¹ * ∑ j ∈ S, A i j else (↑(n - S.card))⁻¹ * ∑ j ∈ Sᶜ, A i j
+⊢ ∑ i with i ∉ S, ∑ j ∈ Sᶜ, A i j = ∑ i ∈ Sᶜ, ∑ j ∈ Sᶜ, A i j ∨ n - S.card = 0
+warning: CutMatrix.lean:24:38: This simp argument is unused:
+  ← Finset.sum_mul
+
+Hint: Omit it from the simp argument list.
+  simp [blockMatrix, hi, mul_ite, ←̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵m̵u̵l̵,̵ ̵mul_comm]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: CutMatrix.lean:65:60: unsolved goals
+n : ℕ
+A : Matrix (Fin n) (Fin n) ℝ
+S : Finset (Fin n)
+ε : ℝ
+heq : baseMatrix n ε - blockMatrix S ε = 1 - blockMatrix S 0
+⊢ (∑ x, ∑ x_1, if x = x_1 then A x x_1 else 0) - ∑ x, ∑ x_1, A x x_1 * blockMatrix S 0 x x_1 =
+    ∑ i, A.diag i - ∑ i, ∑ j, A i j * blockMatrix S 0 i j
+warning: CutMatrix.lean:73:50: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp only [matrixPairing, Matrix.sub_apply, mul_sub, Finset.sum_sub_distrib, Matrix.one_apply,
+  ̲  ̲ ̲ ̲mul_ite, mul_one, mul_zero, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.mem_univ, ↓reduceIte, Matrix.trace]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: CutMatrix.lean:73:70: This simp argument is unused:
+  Finset.mem_univ
+
+Hint: Omit it from the simp argument list.
+  simp only [matrixPairing, Matrix.sub_apply, mul_sub, Finset.sum_sub_distrib, Matrix.one_apply,
+  ̲  ̲ ̲ ̲mul_ite, mul_one, mul_zero, Finset.sum_ite_eq', F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵ ̵↓reduceIte, Matrix.trace]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: CutMatrix.lean:73:87: This simp argument is unused:
+  ↓reduceIte
+
+Hint: Omit it from the simp argument list.
+  simp only [matrixPairing, Matrix.sub_apply, mul_sub, Finset.sum_sub_distrib,
+  ̵  ̵ ̵ ̵Matrix.one_apply,
+  ̲  ̲ ̲ ̲mul_ite, mul_one, mul_zero, Finset.sum_ite_eq', Finset.mem_univ, ↓̵r̵e̵d̵u̵c̵e̵I̵t̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵Matrix.trace]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: CutMatrix.lean:78:0: 'NMF.block_pairing_cut' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: CutMatrix.lean:79:0: 'NMF.base_block_pairing' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- CutMatrix
+error: build failed

@@ -1,0 +1,77 @@
+ℹ [2429/2440] Replayed Stability
+info: Stability.lean:771:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:772:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:773:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:775:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:777:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:779:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:781:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:783:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:785:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:787:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:789:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:791:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:793:0: 'NMF.stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2431/2440] Replayed Recovery
+info: Recovery.lean:71:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2433/2440] Replayed BooleanReduction
+info: BooleanReduction.lean:108:0: 'NMF.sat_iff_nae' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:109:0: 'NMF.nae_to_sat' depends on axioms: [propext, Quot.sound]
+ℹ [2435/2440] Replayed Perturbation
+info: Perturbation.lean:224:0: 'NMF.accepted_base_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:225:0: 'NMF.perturbation_loss_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:227:0: 'NMF.chosen_parameter_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:229:0: 'NMF.accepted_factor_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2437/2440] Replayed CutMatrix
+warning: CutMatrix.lean:24:38: This simp argument is unused:
+  Finset.sum_ite
+
+Hint: Omit it from the simp argument list.
+  simp [blockMatrix, hi, mul_ite, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵,̵ ̵hcompl, ← Finset.sum_mul, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: CutMatrix.lean:24:54: This simp argument is unused:
+  hcompl
+
+Hint: Omit it from the simp argument list.
+  simp [blockMatrix, hi, mul_ite, Finset.sum_ite, h̵c̵o̵m̵p̵l̵,̵ ̵← Finset.sum_mul, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: CutMatrix.lean:98:40: This simp argument is unused:
+  Finset.sum_ite
+
+Hint: Omit it from the simp argument list.
+  simp [blockMatrix, hi, ite_pow, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵,̵ ̵← Finset.mul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: CutMatrix.lean:98:56: This simp argument is unused:
+  ← Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  simp [blockMatrix, hi, ite_pow, Finset.sum_ite,̵ ̵←̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵u̵l̵_̵s̵u̵m̵]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: CutMatrix.lean:236:0: 'NMF.block_pairing_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:237:0: 'NMF.base_block_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:239:0: 'NMF.block_perturbed_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:240:0: 'NMF.block_has_nonnegative_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:242:0: 'NMF.integer_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:243:0: 'NMF.accepted_cut_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:244:0: 'NMF.cut_witness_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:246:0: 'NMF.integer_cut_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2439/2440] Built GraphReduction (6.6s)
+warning: GraphReduction.lean:93:45: Variable name `hmh` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: GraphReduction.lean:224:0: 'NMF.nae_graph_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:225:0: 'NMF.nae_graph_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:226:0: 'NMF.sat_graph_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:228:0: 'NMF.matching_density_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:229:0: 'NMF.chosen_matching_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:231:0: 'NMF.directed_cut_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:233:0: 'NMF.sat_graph_matrix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2440 jobs).

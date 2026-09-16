@@ -1,8 +1,8 @@
 {
   "challenge_module": "Challenge",
-  "solution_module": "Stability",
+  "solution_module": "Reduction",
   "theorem_names": [
-    "NMF.stability"
+    "NMF.Reduction.correctness"
   ],
   "permitted_axioms": [
     "propext",

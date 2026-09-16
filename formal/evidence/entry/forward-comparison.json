@@ -1,0 +1,95 @@
+{
+  "cases": [
+    {
+      "source": {
+        "clauses": [],
+        "variables": []
+      },
+      "dimension": 1,
+      "matrix_exact_match": true,
+      "threshold_exact_match": true
+    },
+    {
+      "source": {
+        "clauses": [
+          []
+        ],
+        "variables": [
+          0
+        ]
+      },
+      "dimension": 3,
+      "matrix_exact_match": true,
+      "threshold_exact_match": true
+    },
+    {
+      "source": {
+        "clauses": [
+          [
+            1
+          ]
+        ],
+        "variables": [
+          0
+        ]
+      },
+      "dimension": 12,
+      "matrix_exact_match": true,
+      "threshold_exact_match": true
+    },
+    {
+      "source": {
+        "clauses": [
+          [
+            1
+          ],
+          [
+            -1
+          ]
+        ],
+        "variables": [
+          0
+        ]
+      },
+      "dimension": 16,
+      "matrix_exact_match": true,
+      "threshold_exact_match": true
+    },
+    {
+      "source": {
+        "clauses": [
+          [
+            1,
+            -2
+          ]
+        ],
+        "variables": [
+          0,
+          1
+        ]
+      },
+      "dimension": 16,
+      "matrix_exact_match": true,
+      "threshold_exact_match": true
+    },
+    {
+      "source": {
+        "clauses": [
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "variables": [
+          0
+        ]
+      },
+      "dimension": 12,
+      "matrix_exact_match": true,
+      "threshold_exact_match": true
+    }
+  ],
+  "status": "passed",
+  "scope": "Finite exact-rational forward-map comparison; not a proof of Python/Z3 implementation agreement."
+}

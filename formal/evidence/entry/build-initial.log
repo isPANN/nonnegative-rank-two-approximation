@@ -1,0 +1,158 @@
+ℹ [596/703] Replayed BooleanReduction
+info: BooleanReduction.lean:148:0: 'NMF.sat_iff_nae' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:149:0: 'NMF.nae_to_sat' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:151:0: 'NMF.padding_preserves_source' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:152:0: 'NMF.empty_clause_unsatisfiable' depends on axioms: [propext, Quot.sound]
+ℹ [2430/2437] Replayed Stability
+info: Stability.lean:771:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:772:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:773:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:775:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:777:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:779:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:781:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:783:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:785:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:787:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:789:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:791:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:793:0: 'NMF.stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2431/2437] Replayed Recovery
+info: Recovery.lean:71:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2432/2437] Replayed Perturbation
+info: Perturbation.lean:224:0: 'NMF.accepted_base_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:225:0: 'NMF.perturbation_loss_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:227:0: 'NMF.chosen_parameter_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:229:0: 'NMF.accepted_factor_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2433/2437] Replayed CutMatrix
+info: CutMatrix.lean:251:0: 'NMF.block_pairing_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:252:0: 'NMF.base_block_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:254:0: 'NMF.block_perturbed_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:255:0: 'NMF.block_has_nonnegative_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:257:0: 'NMF.integer_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:258:0: 'NMF.accepted_cut_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:259:0: 'NMF.cut_witness_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:261:0: 'NMF.integer_cut_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:263:0: 'NMF.identity_three_infeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:264:0: 'NMF.zero_target_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2434/2437] Replayed GraphReduction
+info: GraphReduction.lean:249:0: 'NMF.nae_graph_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:250:0: 'NMF.nae_graph_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:251:0: 'NMF.sat_graph_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:253:0: 'NMF.matching_density_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:254:0: 'NMF.chosen_matching_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:256:0: 'NMF.directed_cut_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:258:0: 'NMF.sat_graph_matrix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:260:0: 'NMF.padded_source_graph_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2435/2437] Building ReductionSpec (9.1s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/ReductionSpec.lean -o /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/ReductionSpec.olean -i /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/ReductionSpec.ilean -c /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/ReductionSpec.c --setup /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/ReductionSpec.setup.json --json
+warning: ReductionSpec.lean:9:2: 'variables' has been replaced by 'variable' in lean 4
+error: ReductionSpec.lean:9:12: unexpected token ':'; expected command
+warning: ReductionSpec.lean:11:45: 'variables' has been replaced by 'variable' in lean 4
+error: ReductionSpec.lean:11:54: unexpected token ')'; expected command
+error: ReductionSpec.lean:19:60: Invalid field `clauses`: The environment does not contain `NMF.Reduction.Source.clauses`, so it is not possible to project the field `clauses` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:27:17: failed to synthesize instance of type class
+  HSub (Fin t.size → Fin t.size → ℝ) (Matrix (Fin t.size) (Fin t.size) ℝ) ?m.26
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: ReductionSpec.lean:35:43: Invalid field `clauses`: The environment does not contain `NMF.Reduction.Source.clauses`, so it is not possible to project the field `clauses` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:36:24: Invalid field `variables`: The environment does not contain `NMF.Reduction.Source.variables`, so it is not possible to project the field `variables` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:36:42: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:37:19: Invalid field `variables`: The environment does not contain `NMF.Reduction.Source.variables`, so it is not possible to project the field `variables` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:37:37: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:38:31: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:38:78: Invalid field `clauses`: The environment does not contain `NMF.Reduction.Source.clauses`, so it is not possible to project the field `clauses` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:69:7: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:70:22: Invalid field `clauses`: The environment does not contain `NMF.Reduction.Source.clauses`, so it is not possible to project the field `clauses` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:72:13: Unknown identifier `sourceGraph`
+error: ReductionSpec.lean:73:34: Invalid field `variables`: The environment does not contain `NMF.Reduction.Source.variables`, so it is not possible to project the field `variables` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:73:52: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:73:73: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:80:58: Invalid field `variables`: The environment does not contain `NMF.Reduction.Source.variables`, so it is not possible to project the field `variables` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:82:18: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:83:24: Invalid field `clauses`: The environment does not contain `NMF.Reduction.Source.clauses`, so it is not possible to project the field `clauses` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:85:50: Invalid field `variables`: The environment does not contain `NMF.Reduction.Source.variables`, so it is not possible to project the field `variables` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:85:68: Invalid field `clausesCount`: The environment does not contain `NMF.Reduction.Source.clausesCount`, so it is not possible to project the field `clausesCount` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:88:30: Invalid field `variables`: The environment does not contain `NMF.Reduction.Source.variables`, so it is not possible to project the field `variables` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:89:53: Invalid field `variables`: The environment does not contain `NMF.Reduction.Source.variables`, so it is not possible to project the field `variables` from an expression
+  s
+of type `Source`
+error: ReductionSpec.lean:85:86: unsolved goals
+s : Source
+W : Matrix (Fin (forward s).size) (Fin 2) ℝ
+H : Matrix (Fin 2) (Fin (forward s).size) ℝ
+hs : ¬sorry = 0
+he : ¬∃ j, sorry = []
+⊢ (sorry s).1.size = 2 * (2 * (sorry () + 1 + sorry ()))
+error: ReductionSpec.lean:80:78: unsolved goals
+s : Source
+W : Matrix (Fin (forward s).size) (Fin 2) ℝ
+H : Matrix (Fin 2) (Fin (forward s).size) ℝ
+⊢ Fin sorry → Bool
+warning: ReductionSpec.lean:86:23: declaration uses `sorry`
+warning: ReductionSpec.lean:86:37: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [forward, construction, hs̵,̵ ̵h̵e, cutTarget]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ReductionSpec.lean:86:41: This simp argument is unused:
+  he
+
+Hint: Omit it from the simp argument list.
+  simp [forward, construction, hs, h̵e̵,̵ ̵cutTarget]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ReductionSpec.lean:86:45: This simp argument is unused:
+  cutTarget
+
+Hint: Omit it from the simp argument list.
+  simp [forward, construction, hs, he,̵ ̵c̵u̵t̵T̵a̵r̵g̵e̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: ReductionSpec.lean:100:53: Invalid field `clauses`: The environment does not contain `NMF.Reduction.Source.clauses`, so it is not possible to project the field `clauses` from an expression
+  s
+of type `Source`
+error: Lean exited with code 1
+Some required targets logged failures:
+- ReductionSpec
+error: build failed

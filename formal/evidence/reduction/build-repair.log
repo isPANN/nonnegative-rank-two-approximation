@@ -1,0 +1,59 @@
+ℹ [2429/2434] Replayed Stability
+info: Stability.lean:771:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:772:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:773:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:775:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:777:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:779:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:781:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:783:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:785:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:787:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:789:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:791:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:793:0: 'NMF.stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2431/2434] Replayed Recovery
+info: Recovery.lean:71:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2433/2434] Building BooleanReduction (2.6s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/BooleanReduction.lean -o /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/BooleanReduction.olean -i /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/BooleanReduction.ilean -c /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/BooleanReduction.c --setup /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/BooleanReduction.setup.json --json
+error: BooleanReduction.lean:101:38: Application type mismatch: The argument
+  h₂
+has type
+  nae (!b (auxiliaryIndex j)) (b (liftLiteral (s j 2)).1 ^^ (liftLiteral (s j 2)).2)
+      (b (![(auxiliaryIndex j, true), liftLiteral (s j 2), (falseIndex n m, false)] 2).1 ^^
+        (![(auxiliaryIndex j, true), liftLiteral (s j 2), (falseIndex n m, false)] 2).2) =
+    true
+but is expected to have type
+  nae
+      (!(b (![liftLiteral (s j 0), liftLiteral (s j 1), (auxiliaryIndex j, false)] 2).1 ^^
+          (![liftLiteral (s j 0), liftLiteral (s j 1), (auxiliaryIndex j, false)] 2).2))
+      (literalValue b (liftLiteral (s j 2))) (b (falseIndex n m)) =
+    true
+in the application
+  nae_gadget_sound (literalValue b (liftLiteral (s j 0))) (literalValue b (liftLiteral (s j 1)))
+    (literalValue b (liftLiteral (s j 2))) (b (falseIndex n m))
+    (b (![liftLiteral (s j 0), liftLiteral (s j 1), (auxiliaryIndex j, false)] 2).1 ^^
+      (![liftLiteral (s j 0), liftLiteral (s j 1), (auxiliaryIndex j, false)] 2).2)
+    h₁ h₂
+warning: BooleanReduction.lean:98:47: This simp argument is unused:
+  Matrix.cons_val_fin_one
+
+Hint: Omit it from the simp argument list.
+  simp only [naeClauses, Bool.false_eq_true, ↓reduceIte, literalValue, Matrix.cons_val_zero,
+  ̲  ̲ ̲ ̲Matrix.cons_val_one, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵f̵i̵n̵_̵o̵n̵e̵,̵ ̵Bool.xor_false, Bool.xor_true] at h₁ h₂
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BooleanReduction.lean:98:72: This simp argument is unused:
+  Bool.xor_false
+
+Hint: Omit it from the simp argument list.
+  simp only [naeClauses, Bool.false_eq_true, ↓reduceIte, literalValue, Matrix.cons_val_zero,
+  ̲  ̲ ̲ ̲Matrix.cons_val_one, Matrix.cons_val_fin_one, B̵o̵o̵l̵.̵x̵o̵r̵_̵f̵a̵l̵s̵e̵,̵Bool.xor_true] at h₁ h₂
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: BooleanReduction.lean:110:0: 'NMF.sat_iff_nae' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:111:0: 'NMF.nae_to_sat' depends on axioms: [propext, sorryAx, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- BooleanReduction
+error: build failed

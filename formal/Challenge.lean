@@ -1,10 +1,8 @@
-import Definitions
+import ReductionSpec
 
-set_option autoImplicit false
+namespace NMF.Reduction
 
-namespace NMF
-
-theorem stability : StabilityClaim := by
+theorem correctness : Correctness := by
   sorry
 
-end NMF
+end NMF.Reduction

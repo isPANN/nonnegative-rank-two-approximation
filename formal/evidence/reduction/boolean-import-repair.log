@@ -1,0 +1,48 @@
+✖ [597/598] Building BooleanReduction (3.3s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/BooleanReduction.lean -o /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/BooleanReduction.olean -i /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/BooleanReduction.ilean -c /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/BooleanReduction.c --setup /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/BooleanReduction.setup.json --json
+error: BooleanReduction.lean:43:42: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  c ≤ 0
+  b ≥ 0
+where
+ b := ↑n
+ c := ↑m
+warning: BooleanReduction.lean:63:8: declaration uses `sorry`
+warning: BooleanReduction.lean:61:8: declaration uses `sorry`
+warning: BooleanReduction.lean:66:62: declaration uses `sorry`
+warning: BooleanReduction.lean:65:8: declaration uses `sorry`
+warning: BooleanReduction.lean:73:8: declaration uses `sorry`
+warning: BooleanReduction.lean:68:8: declaration uses `sorry`
+error: BooleanReduction.lean:82:2: Tactic `generalize` failed: result is not type correct
+  ∀ (x : Bool), (decide ((x ^^ b (falseIndex n m) ^^ l.2) = (x ^^ l.2)) ^^ b (falseIndex n m)) = true
+
+n m : ℕ
+b : Fin (n + 1 + m) → Bool
+l : Literal n
+⊢ (decide ((b (originalIndex l.1) ^^ b (falseIndex n m) ^^ l.2) = (b (originalIndex l.1) ^^ l.2)) ^^
+      b (falseIndex n m)) =
+    true
+error: BooleanReduction.lean:100:2: `simp` made no progress
+warning: BooleanReduction.lean:98:47: This simp argument is unused:
+  Matrix.cons_val_fin_one
+
+Hint: Omit it from the simp argument list.
+  simp only [naeClauses, Bool.false_eq_true, ↓reduceIte, literalValue, Matrix.cons_val_zero,
+  ̲  ̲ ̲ ̲Matrix.cons_val_one, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵f̵i̵n̵_̵o̵n̵e̵,̵ ̵Bool.xor_false, Bool.xor_true] at h₁ h₂
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BooleanReduction.lean:98:72: This simp argument is unused:
+  Bool.xor_false
+
+Hint: Omit it from the simp argument list.
+  simp only [naeClauses, Bool.false_eq_true, ↓reduceIte, literalValue, Matrix.cons_val_zero,
+  ̲  ̲ ̲ ̲Matrix.cons_val_one, Matrix.cons_val_fin_one, B̵o̵o̵l̵.̵x̵o̵r̵_̵f̵a̵l̵s̵e̵,̵Bool.xor_true] at h₁ h₂
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: BooleanReduction.lean:110:0: 'NMF.sat_iff_nae' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:111:0: 'NMF.nae_to_sat' depends on axioms: [propext, sorryAx, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- BooleanReduction
+error: build failed

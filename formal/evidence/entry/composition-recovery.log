@@ -1,0 +1,198 @@
+ℹ [596/729] Replayed BooleanReduction
+info: BooleanReduction.lean:148:0: 'NMF.sat_iff_nae' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:149:0: 'NMF.nae_to_sat' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:151:0: 'NMF.padding_preserves_source' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:152:0: 'NMF.empty_clause_unsatisfiable' depends on axioms: [propext, Quot.sound]
+ℹ [2430/2440] Replayed Stability
+info: Stability.lean:771:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:772:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:773:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:775:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:777:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:779:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:781:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:783:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:785:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:787:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:789:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:791:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:793:0: 'NMF.stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2431/2440] Replayed Recovery
+info: Recovery.lean:71:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2432/2440] Replayed Perturbation
+info: Perturbation.lean:224:0: 'NMF.accepted_base_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:225:0: 'NMF.perturbation_loss_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:227:0: 'NMF.chosen_parameter_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:229:0: 'NMF.accepted_factor_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2433/2440] Replayed CutMatrix
+info: CutMatrix.lean:251:0: 'NMF.block_pairing_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:252:0: 'NMF.base_block_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:254:0: 'NMF.block_perturbed_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:255:0: 'NMF.block_has_nonnegative_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:257:0: 'NMF.integer_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:258:0: 'NMF.accepted_cut_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:259:0: 'NMF.cut_witness_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:261:0: 'NMF.integer_cut_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:263:0: 'NMF.identity_three_infeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:264:0: 'NMF.zero_target_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2434/2440] Replayed GraphReduction
+info: GraphReduction.lean:249:0: 'NMF.nae_graph_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:250:0: 'NMF.nae_graph_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:251:0: 'NMF.sat_graph_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:253:0: 'NMF.matching_density_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:254:0: 'NMF.chosen_matching_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:256:0: 'NMF.directed_cut_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:258:0: 'NMF.sat_graph_matrix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:260:0: 'NMF.padded_source_graph_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2436/2440] Replayed MatchingProof
+info: MatchingProof.lean:380:0: 'NMF.Reduction.cut_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:381:0: 'NMF.Reduction.cut_le_half_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:383:0: 'NMF.Reduction.mate_count_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:384:0: 'NMF.Reduction.mate_count_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:386:0: 'NMF.Reduction.matching_cut_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:388:0: 'NMF.Reduction.complement_cut_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:390:0: 'NMF.Reduction.complement_cut_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MatchingProof.lean:392:0: 'NMF.Reduction.complement_threshold_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2437/2440] Replayed ReductionProof
+warning: ReductionProof.lean:39:45: Try `simp at hj` instead of `simpa using hj`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ReductionProof.lean:192:0: 'NMF.Reduction.integer_scale_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReductionProof.lean:194:0: 'NMF.Reduction.cut_target_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2438/2440] Building SourceGraphProof (8.9s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/SourceGraphProof.lean -o /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/SourceGraphProof.olean -i /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/SourceGraphProof.ilean -c /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/SourceGraphProof.c --setup /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/SourceGraphProof.setup.json --json
+warning: SourceGraphProof.lean:10:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SourceGraphProof.lean:20:66: This simp argument is unused:
+  Nat.mul_mod
+
+Hint: Omit it from the simp argument list.
+  simp [literalIndex, literalVertex, Nat.add_mod,̵ ̵N̵a̵t̵.̵m̵u̵l̵_̵m̵o̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SourceGraphProof.lean:99:43: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [undirected_edge_total, mul_comm, mul_l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵m̵u̵l̵_̵assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: SourceGraphProof.lean:165:48: Application type mismatch: The argument
+  W
+has type
+  Matrix
+    (Fin
+      (if s.clausesCount = 0 then ({ size := 1, matrix := 0, threshold := 0 }, 0)
+          else
+            if he : ∃ j, s.clauses j = [] then ({ size := 3, matrix := 1, threshold := 0 }, 0)
+            else
+              cutTarget (complementMatrix (sourceGraph s ⋯))
+                (complementThreshold (sourceGraph s ⋯)
+                  (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).1.size)
+    (Fin 2) ℝ
+but is expected to have type
+  Matrix (Fin (2 * (2 * (s.numVars + 1 + s.clausesCount)))) (Fin 2) ℝ
+in the application
+  hmain.right.right W
+error: SourceGraphProof.lean:151:85: unsolved goals
+s : Source
+hs : s.clausesCount ≠ 0
+he : ¬∃ j, s.clauses j = []
+hne : ∀ (j : Fin s.clausesCount), s.clauses j ≠ [] := fun j hj => he (Exists.intro j hj)
+B : Matrix (Fin (2 * (s.numVars + 1 + s.clausesCount))) (Fin (2 * (s.numVars + 1 + s.clausesCount))) ℕ :=
+  sourceGraph s hne
+K : ℕ := naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)
+C : Matrix (Fin (2 * (2 * (s.numVars + 1 + s.clausesCount)))) (Fin (2 * (2 * (s.numVars + 1 + s.clausesCount)))) ℕ :=
+  complementMatrix B
+k : ℚ := complementThreshold B K
+hh : 2 ≤ 2 * (s.numVars + 1 + s.clausesCount)
+hB : B.transpose = B
+hK : K ≤ matchingWeight B
+hk : 0 ≤ complementThreshold B K
+hkcap : complementThreshold B K ≤ ↑(Finset.univ.sup fun i => Finset.univ.sup fun j => complementMatrix B i j)
+hmain :
+  (cutTarget C k).1.WellFormed ∧
+    ((∃ S, 0 < S.card ∧ S.card < 2 * (2 * (s.numVars + 1 + s.clausesCount)) ∧ cutDensity (fun i j => ↑(C i j)) S ≤ ↑k) ↔
+        (cutTarget C k).1.Feasible) ∧
+      ∀ (W : Matrix (Fin (2 * (2 * (s.numVars + 1 + s.clausesCount)))) (Fin 2) ℝ)
+        (H : Matrix (Fin 2) (Fin (2 * (2 * (s.numVars + 1 + s.clausesCount)))) ℝ),
+        (cutTarget C k).1.ValidWitness W H →
+          ∃ S,
+            0 < S.card ∧
+              S.card < 2 * (2 * (s.numVars + 1 + s.clausesCount)) ∧
+                cutDensity (fun i j => ↑(C i j)) S ≤ ↑k ∧
+                  ∀ (i j : Fin (2 * (2 * (s.numVars + 1 + s.clausesCount)))),
+                    (W * H) i j > ↑(cutTarget C k).2 + 1 / (2 * ↑(2 * (2 * (s.numVars + 1 + s.clausesCount)))) ↔
+                      sameBlock S i j
+W :
+  Matrix
+    (Fin
+      (if s.clausesCount = 0 then ({ size := 1, matrix := 0, threshold := 0 }, 0)
+          else
+            if he : ∃ j, s.clauses j = [] then ({ size := 3, matrix := 1, threshold := 0 }, 0)
+            else
+              cutTarget (complementMatrix (sourceGraph s ⋯))
+                (complementThreshold (sourceGraph s ⋯)
+                  (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).1.size)
+    (Fin 2) ℝ
+H :
+  Matrix (Fin 2)
+    (Fin
+      (if s.clausesCount = 0 then ({ size := 1, matrix := 0, threshold := 0 }, 0)
+          else
+            if he : ∃ j, s.clauses j = [] then ({ size := 3, matrix := 1, threshold := 0 }, 0)
+            else
+              cutTarget (complementMatrix (sourceGraph s ⋯))
+                (complementThreshold (sourceGraph s ⋯)
+                  (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).1.size)
+    ℝ
+hw :
+  (if s.clausesCount = 0 then ({ size := 1, matrix := 0, threshold := 0 }, 0)
+        else
+          if he : ∃ j, s.clauses j = [] then ({ size := 3, matrix := 1, threshold := 0 }, 0)
+          else
+            cutTarget (complementMatrix (sourceGraph s ⋯))
+              (complementThreshold (sourceGraph s ⋯)
+                (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).1.ValidWitness
+    W H
+S : Finset (Fin (2 * (2 * (s.numVars + 1 + s.clausesCount))))
+hSp : 0 < S.card
+hSn : S.card < 2 * (2 * (s.numVars + 1 + s.clausesCount))
+hc : cutDensity (fun i j => ↑(C i j)) S ≤ ↑k
+hround :
+  ∀ (i j : Fin (2 * (2 * (s.numVars + 1 + s.clausesCount)))),
+    (sorry * sorry) i j > ↑(cutTarget C k).2 + 1 / (2 * ↑(2 * (2 * (s.numVars + 1 + s.clausesCount)))) ↔ sameBlock S i j
+hcut : K ≤ directedCut B fun i => decide (mateIndex i false ∈ S)
+hsat : sourceWitness s.clauses (recoverAssignment fun i => decide (mateIndex (literalVertex (i, false)) false ∈ S))
+i : Fin s.numVars
+⊢ (decide
+        ((W * H) ⟨0, ⋯⟩ ⟨2 * ↑i, ⋯⟩ >
+          ↑(cutTarget (complementMatrix (sourceGraph s ⋯))
+                  (complementThreshold (sourceGraph s ⋯)
+                    (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).2 +
+            1 /
+              (2 *
+                ↑(cutTarget (complementMatrix (sourceGraph s ⋯))
+                        (complementThreshold (sourceGraph s ⋯)
+                          (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).1.size)) !=
+      decide
+        ((W * H) ⟨0, ⋯⟩ ⟨2 * s.numVars, ⋯⟩ >
+          ↑(cutTarget (complementMatrix (sourceGraph s ⋯))
+                  (complementThreshold (sourceGraph s ⋯)
+                    (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).2 +
+            1 /
+              (2 *
+                ↑(cutTarget (complementMatrix (sourceGraph s ⋯))
+                        (complementThreshold (sourceGraph s ⋯)
+                          (naeGraphThreshold (s.numVars + 1 + s.clausesCount) (Fin s.clausesCount × Bool)))).1.size))) =
+    recoverAssignment (fun i => decide (mateIndex (literalVertex (i, false)) false ∈ S)) i
+info: SourceGraphProof.lean:202:0: 'NMF.Reduction.source_graph_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SourceGraphProof.lean:203:0: 'NMF.Reduction.source_graph_threshold_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SourceGraphProof.lean:205:0: 'NMF.Reduction.normal_recovery' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: SourceGraphProof.lean:206:0: 'NMF.Reduction.normal_forward_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SourceGraphProof.lean:207:0: 'NMF.Reduction.normal_forward_wellformed' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- SourceGraphProof
+error: build failed

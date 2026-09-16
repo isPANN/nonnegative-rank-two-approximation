@@ -1,0 +1,286 @@
+ℹ [596/713] Replayed BooleanReduction
+info: BooleanReduction.lean:148:0: 'NMF.sat_iff_nae' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BooleanReduction.lean:149:0: 'NMF.nae_to_sat' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:151:0: 'NMF.padding_preserves_source' depends on axioms: [propext, Quot.sound]
+info: BooleanReduction.lean:152:0: 'NMF.empty_clause_unsatisfiable' depends on axioms: [propext, Quot.sound]
+ℹ [2430/2438] Replayed Stability
+info: Stability.lean:771:0: 'NMF.endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:772:0: 'NMF.endpoint_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:773:0: 'NMF.endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:775:0: 'NMF.nonnegative_endpoint_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:777:0: 'NMF.normalize_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:779:0: 'NMF.projection_error_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:781:0: 'NMF.projection_base_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:783:0: 'NMF.projection_ones_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:785:0: 'NMF.projection_error_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:787:0: 'NMF.near_optimal_projection_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:789:0: 'NMF.exists_column_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:791:0: 'NMF.rank_two_of_near_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Stability.lean:793:0: 'NMF.stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2431/2438] Replayed Recovery
+info: Recovery.lean:71:0: 'NMF.stable_witness_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2432/2438] Replayed Perturbation
+info: Perturbation.lean:224:0: 'NMF.accepted_base_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:225:0: 'NMF.perturbation_loss_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:227:0: 'NMF.chosen_parameter_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Perturbation.lean:229:0: 'NMF.accepted_factor_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2433/2438] Replayed CutMatrix
+info: CutMatrix.lean:251:0: 'NMF.block_pairing_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:252:0: 'NMF.base_block_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:254:0: 'NMF.block_perturbed_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:255:0: 'NMF.block_has_nonnegative_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:257:0: 'NMF.integer_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:258:0: 'NMF.accepted_cut_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:259:0: 'NMF.cut_witness_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:261:0: 'NMF.integer_cut_density_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:263:0: 'NMF.identity_three_infeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CutMatrix.lean:264:0: 'NMF.zero_target_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2434/2438] Replayed GraphReduction
+info: GraphReduction.lean:249:0: 'NMF.nae_graph_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:250:0: 'NMF.nae_graph_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:251:0: 'NMF.sat_graph_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:253:0: 'NMF.matching_density_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:254:0: 'NMF.chosen_matching_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:256:0: 'NMF.directed_cut_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:258:0: 'NMF.sat_graph_matrix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GraphReduction.lean:260:0: 'NMF.padded_source_graph_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2436/2438] Building ReductionProof (13s)
+trace: .> LEAN_PATH=/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Cli/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/batteries/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/Qq/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/aesop/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/importGraph/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/plausible/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/.lake/build/lib/lean:/Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean /Users/xiweipan/.elan/toolchains/leanprover--lean4---v4.32.2/bin/lean /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/ReductionProof.lean -o /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/ReductionProof.olean -i /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/lib/lean/ReductionProof.ilean -c /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/ReductionProof.c --setup /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/build/ir/ReductionProof.setup.json --json
+warning: ReductionProof.lean:39:45: Try `simp at hj` instead of `simpa using hj`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: ReductionProof.lean:117:44: Type mismatch
+  Finset.le_sup (Finset.mem_univ i)
+has type
+  ?m.631 i ≤ Finset.univ.sup ?m.631
+but is expected to have type
+  ∑ j, C i j ≤ d
+error: ReductionProof.lean:128:97: unsolved goals
+n : ℕ
+hn : 3 ≤ n
+C : Matrix (Fin n) (Fin n) ℕ
+hsym : C.transpose = C
+k : ℚ
+hk : 0 ≤ k
+hkc : k ≤ ↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j)
+d : ℕ := Finset.univ.sup fun i => ∑ j, C i j
+A : Matrix (Fin n) (Fin n) ℕ := fun i j => C i j + if i = j then d - ∑ j, C i j else 0
+cap : ℕ := Finset.univ.sup fun i => Finset.univ.sup fun j => C i j
+L : ℕ := 1 + n + ∑ i, ∑ j, A i j + 2 * d + n * (cap + 1)
+g : ℚ := 1 / (↑k.den * ↑n ^ 2)
+r : ℚ := g / (16 * ↑L * ↑n)
+ε : ℚ := r ^ 2 / (256 * ↑n ^ 2)
+δ : ℚ := ε ^ 3 / (144 * ↑L)
+R : Matrix (Fin n) (Fin n) ℝ := fun i j => ↑(A i j)
+hgcast : ↑g = 1 / (↑k.den * ↑n ^ 2)
+hrcast : ↑r = ↑g / (16 * ↑L * ↑n)
+hεcast : ↑ε = ↑r ^ 2 / (256 * ↑n ^ 2)
+hδcast : ↑δ = ↑ε ^ 3 / (144 * ↑L)
+hg : 0 < ↑g
+hg1 : ↑g ≤ 1
+hL : 1 ≤ ↑L
+hnorm : ‖R‖ ≤ ↑L
+hbracket : |R.trace - 2 * ↑d + ↑n * (↑k + ↑g / 2)| ≤ ↑L
+hδ : 0 < ↑δ
+hε : 0 < ↑ε
+left✝⁵ : ↑ε * ↑n ≤ 1
+left✝⁴ : ↑δ * ↑L ≤ 1
+left✝³ : 0 < 4 * ↑n * ↑δ * ↑L
+hη1 : 4 * ↑n * ↑δ * ↑L < 1
+left✝² : 4 * ↑n * ↑δ * ↑L < 2 * ↑ε * ↑n + ↑ε ^ 2 * ↑n ^ 2
+left✝¹ : stabilityBound n (↑ε) (4 * ↑n * ↑δ * ↑L) < ↑r
+left✝ : ↑r < 1 / (2 * ↑n)
+right✝ : 2 * ↑L * ↑r < ↑n * ↑g
+hrows : ∀ (i : Fin n), ∑ j, R i j = ↑d
+hRsym : R.transpose = R
+hcut : ∀ (S : Finset (Fin n)), cutDensity R S = cutDensity (fun i j => ↑(C i j)) S
+i j : Fin (cutTarget C k).1.size
+⊢ Matrix.of
+      (fun i j =>
+        ↑(if i = j then 1 else 0) +
+            ((↑n ^ 2)⁻¹ * (↑k.den)⁻¹ /
+                  (16 *
+                      (1 + ↑n +
+                            ∑ x,
+                              ∑ x_1,
+                                (↑(C x x_1) +
+                                  ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+                          2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+                        ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1)) *
+                    ↑n)) ^
+                2 /
+              (256 * ↑n ^ 2) +
+          (((↑n ^ 2)⁻¹ * (↑k.den)⁻¹ /
+                      (16 *
+                          (1 + ↑n +
+                                ∑ x,
+                                  ∑ x_1,
+                                    (↑(C x x_1) +
+                                      ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+                              2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+                            ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1)) *
+                        ↑n)) ^
+                    2 /
+                  (256 * ↑n ^ 2)) ^
+                3 /
+              (144 *
+                (1 + ↑n +
+                      ∑ x,
+                        ∑ x_1,
+                          (↑(C x x_1) +
+                            ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+                    2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+                  ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1))) *
+            (↑(C i j) + ↑(if i = j then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C i j) else 0)))
+      i j =
+    (if i = j then 1 else 0) +
+        ((↑n ^ 2)⁻¹ * (↑k.den)⁻¹ /
+              (16 *
+                  (1 + ↑n +
+                        ∑ x,
+                          ∑ x_1,
+                            (↑(C x x_1) +
+                              ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+                      2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+                    ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1)) *
+                ↑n)) ^
+            2 /
+          (256 * ↑n ^ 2) +
+      (((↑n ^ 2)⁻¹ * (↑k.den)⁻¹ /
+                  (16 *
+                      (1 + ↑n +
+                            ∑ x,
+                              ∑ x_1,
+                                (↑(C x x_1) +
+                                  ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+                          2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+                        ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1)) *
+                    ↑n)) ^
+                2 /
+              (256 * ↑n ^ 2)) ^
+            3 /
+          (144 *
+            (1 + ↑n +
+                  ∑ x,
+                    ∑ x_1,
+                      (↑(C x x_1) + ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+                2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+              ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1))) *
+        (↑(C i j) + if i = j then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C i j) else 0)
+error: ReductionProof.lean:132:75: unsolved goals
+n : ℕ
+hn : 3 ≤ n
+C : Matrix (Fin n) (Fin n) ℕ
+hsym : C.transpose = C
+k : ℚ
+hk : 0 ≤ k
+hkc : k ≤ ↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j)
+d : ℕ := Finset.univ.sup fun i => ∑ j, C i j
+A : Matrix (Fin n) (Fin n) ℕ := fun i j => C i j + if i = j then d - ∑ j, C i j else 0
+cap : ℕ := Finset.univ.sup fun i => Finset.univ.sup fun j => C i j
+L : ℕ := 1 + n + ∑ i, ∑ j, A i j + 2 * d + n * (cap + 1)
+g : ℚ := 1 / (↑k.den * ↑n ^ 2)
+r : ℚ := g / (16 * ↑L * ↑n)
+ε : ℚ := r ^ 2 / (256 * ↑n ^ 2)
+δ : ℚ := ε ^ 3 / (144 * ↑L)
+R : Matrix (Fin n) (Fin n) ℝ := fun i j => ↑(A i j)
+hgcast : ↑g = 1 / (↑k.den * ↑n ^ 2)
+hrcast : ↑r = ↑g / (16 * ↑L * ↑n)
+hεcast : ↑ε = ↑r ^ 2 / (256 * ↑n ^ 2)
+hδcast : ↑δ = ↑ε ^ 3 / (144 * ↑L)
+hg : 0 < ↑g
+hg1 : ↑g ≤ 1
+hL : 1 ≤ ↑L
+hnorm : ‖R‖ ≤ ↑L
+hbracket : |R.trace - 2 * ↑d + ↑n * (↑k + ↑g / 2)| ≤ ↑L
+hδ : 0 < ↑δ
+hε : 0 < ↑ε
+left✝⁵ : ↑ε * ↑n ≤ 1
+left✝⁴ : ↑δ * ↑L ≤ 1
+left✝³ : 0 < 4 * ↑n * ↑δ * ↑L
+hη1 : 4 * ↑n * ↑δ * ↑L < 1
+left✝² : 4 * ↑n * ↑δ * ↑L < 2 * ↑ε * ↑n + ↑ε ^ 2 * ↑n ^ 2
+left✝¹ : stabilityBound n (↑ε) (4 * ↑n * ↑δ * ↑L) < ↑r
+left✝ : ↑r < 1 / (2 * ↑n)
+right✝ : 2 * ↑L * ↑r < ↑n * ↑g
+hrows : ∀ (i : Fin n), ∑ j, R i j = ↑d
+hRsym : R.transpose = R
+hcut : ∀ (S : Finset (Fin n)), cutDensity R S = cutDensity (fun i j => ↑(C i j)) S
+hX : (Matrix.of fun i j => ↑((cutTarget C k).1.matrix i j)) = perturbedMatrix R ↑ε ↑δ
+⊢ ∑ x, ∑ x_1, (↑(C x x_1) + ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) ^ 2 =
+      ∑ x, ∑ x_1, (↑(C x x_1) + if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0) ^ 2 ∨
+    ((n = 0 ∨
+          1 + ↑n +
+                    ∑ x,
+                      ∑ x_1,
+                        (↑(C x x_1) + ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+                  2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+                ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1) =
+              0 ∨
+            n = 0) ∨
+        n = 0) ∨
+      1 + ↑n +
+              ∑ x,
+                ∑ x_1, (↑(C x x_1) + ↑(if x = x_1 then ↑((Finset.univ.sup fun i => ∑ j, C i j) - ∑ j, C x j) else 0)) +
+            2 * ↑(Finset.univ.sup fun i => ∑ j, C i j) +
+          ↑n * (↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j) + 1) =
+        0
+error: ReductionProof.lean:137:81: unsolved goals
+n : ℕ
+hn : 3 ≤ n
+C : Matrix (Fin n) (Fin n) ℕ
+hsym : C.transpose = C
+k : ℚ
+hk : 0 ≤ k
+hkc : k ≤ ↑(Finset.univ.sup fun i => Finset.univ.sup fun j => C i j)
+d : ℕ := Finset.univ.sup fun i => ∑ j, C i j
+A : Matrix (Fin n) (Fin n) ℕ := fun i j => C i j + if i = j then d - ∑ j, C i j else 0
+cap : ℕ := Finset.univ.sup fun i => Finset.univ.sup fun j => C i j
+L : ℕ := 1 + n + ∑ i, ∑ j, A i j + 2 * d + n * (cap + 1)
+g : ℚ := 1 / (↑k.den * ↑n ^ 2)
+r : ℚ := g / (16 * ↑L * ↑n)
+ε : ℚ := r ^ 2 / (256 * ↑n ^ 2)
+δ : ℚ := ε ^ 3 / (144 * ↑L)
+R : Matrix (Fin n) (Fin n) ℝ := fun i j => ↑(A i j)
+hgcast : ↑g = 1 / (↑k.den * ↑n ^ 2)
+hrcast : ↑r = ↑g / (16 * ↑L * ↑n)
+hεcast : ↑ε = ↑r ^ 2 / (256 * ↑n ^ 2)
+hδcast : ↑δ = ↑ε ^ 3 / (144 * ↑L)
+hg : 0 < ↑g
+hg1 : ↑g ≤ 1
+hL : 1 ≤ ↑L
+hnorm : ‖R‖ ≤ ↑L
+hbracket : |R.trace - 2 * ↑d + ↑n * (↑k + ↑g / 2)| ≤ ↑L
+hδ : 0 < ↑δ
+hε : 0 < ↑ε
+left✝⁵ : ↑ε * ↑n ≤ 1
+left✝⁴ : ↑δ * ↑L ≤ 1
+left✝³ : 0 < 4 * ↑n * ↑δ * ↑L
+hη1 : 4 * ↑n * ↑δ * ↑L < 1
+left✝² : 4 * ↑n * ↑δ * ↑L < 2 * ↑ε * ↑n + ↑ε ^ 2 * ↑n ^ 2
+left✝¹ : stabilityBound n (↑ε) (4 * ↑n * ↑δ * ↑L) < ↑r
+left✝ : ↑r < 1 / (2 * ↑n)
+right✝ : 2 * ↑L * ↑r < ↑n * ↑g
+hrows : ∀ (i : Fin n), ∑ j, R i j = ↑d
+hRsym : R.transpose = R
+hcut : ∀ (S : Finset (Fin n)), cutDensity R S = cutDensity (fun i j => ↑(C i j)) S
+hX : (Matrix.of fun i j => ↑((cutTarget C k).1.matrix i j)) = perturbedMatrix R ↑ε ↑δ
+hτ : ↑(cutTarget C k).1.threshold = lossThreshold R ↑δ ↑d ↑k ↑g
+W : Matrix (Fin n) (Fin 2) ℝ
+H : Matrix (Fin 2) (Fin n) ℝ
+⊢ (∀ (i : Fin (cutTarget C k).1.size) (j : Fin 2), 0 ≤ W i j) ∧
+      (∀ (i : Fin 2) (j : Fin (cutTarget C k).1.size), 0 ≤ H i j) ∧
+        frobeniusSq (perturbedMatrix R ↑ε ↑δ - W * H) ≤ lossThreshold R ↑δ ↑d ↑k ↑g ↔
+    (∀ (i : Fin n) (j : Fin 2), 0 ≤ W i j) ∧
+      (∀ (i : Fin 2) (j : Fin n), 0 ≤ H i j) ∧
+        frobeniusSq (perturbedMatrix R ↑ε ↑δ - W * H) ≤ lossThreshold R ↑δ ↑d ↑k ↑g
+error: ReductionProof.lean:163:6: mod_cast has type
+  (0 : ℝ) ≤ Matrix.of (fun i j => ↑((cutTarget C k).1.matrix i j)) i j
+but is expected to have type
+  (0 : ℚ) ≤ (cutTarget C k).1.matrix i j
+info: ReductionProof.lean:187:0: 'NMF.Reduction.integer_scale_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReductionProof.lean:189:0: 'NMF.Reduction.cut_target_correct' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- ReductionProof
+error: build failed

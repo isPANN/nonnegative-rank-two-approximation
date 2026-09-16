@@ -3,7 +3,8 @@
 This repository records a proposed deterministic Karp reduction from 3-SAT to
 nonnegative rank-two squared-Frobenius approximation. It contains the complete
 mathematical argument, forward construction and witness recovery, finite tests,
-a Lean proof of the central stability lemma, and the retained exploration history.
+a Lean proof of the complete mathematical reduction and witness recovery, and the
+retained exploration history.
 
 For a nonnegative rational matrix X and a nonnegative rational threshold tau,
 the target asks whether nonnegative real factors W and H, with inner dimension
@@ -40,11 +41,12 @@ correctness, priority and significance assessment remain outstanding.
 | Mathematical reduction and witness recovery | Complete written argument; native agent review advanced after a parser repair. No independent human certification. |
 | Stability lemma | Complete `NMF.stability : NMF.StabilityClaim`; local Lean build, transitive axiom audit and fresh Lean kernel replay passed. |
 | Independent formal checking | Comparator and an independently implemented kernel have not run; deferred at the owner's request. |
-| Complete Karp reduction, polynomial bounds and Python agreement | Not formalized in Lean. |
+| Reduction correctness | `NMF.Reduction.correctness` proves output legality, YES/NO equivalence and recovery from every valid real factor pair, including exceptional source branches. Local build, axiom audit and fresh kernel replay passed. [Unified entry and scope](formal/README.md). |
+| Polynomial bounds and Python agreement | Not formalized. Complexity is outside the current requested scope. |
 | Executable checks | Finite tests include YES/NO inputs and algebraic, nonoptimal and large-coordinate witnesses. Nontrivial NMF verdicts use proof-assisted cut certificates, not unrestricted global NMF solves. |
 
-The Lean result certifies the stated stability lemma under Lean's foundations.
-It does not by itself certify NP-hardness or the complete reduction. See the
+The Lean result proves mathematical correctness under Lean's foundations.
+Polynomial resource bounds and agreement with Python/Z3 remain outside that proof. See the
 [original verification report](history/campaign/work/verification.md) for test
 coverage and shared mathematical dependencies. Fresh export checks are recorded
 in [evidence](evidence/README.md).
@@ -55,15 +57,15 @@ Use Python 3.12 and [uv](https://docs.astral.sh/uv/), then run from this directo
 
 ```sh
 uv venv --python 3.12
-uv pip install --python .venv/bin/python -r requirements.txt
-source .venv/bin/activate
-python algorithm/check.py --self-test
-python algorithm/check.py --candidate algorithm/algorithm.py
-python algorithm/verify.py --candidate algorithm/algorithm.py
-python algorithm/check-repair.py
+uv pip sync --python .venv/bin/python requirements.txt
+uv run --no-project python algorithm/check.py --self-test
+uv run --no-project python algorithm/check.py --candidate algorithm/algorithm.py
+uv run --no-project python algorithm/verify.py --candidate algorithm/algorithm.py
+uv run --no-project python algorithm/check-repair.py
 ```
 
-The requirements file records the package versions used for the export checks.
+uv manages the local `.venv`; no manual activation is needed. The requirements
+file pins the package versions used for the export checks.
 `algorithm.py` reads a source JSON instance from standard input and writes the
 target JSON. With `--extract`, it reads an object containing `source` and
 `target_solution` and writes a Boolean assignment. See the contract for the
@@ -76,7 +78,24 @@ With Typst installed, rebuild the paper using:
 typst compile paper/manuscript.typ paper/manuscript.pdf
 ```
 
-Lean build and replay commands are in [formal/README.md](formal/README.md).
+## Check the Lean proof
+
+Install elan, then run from the repository root:
+
+```sh
+cd formal
+lake exe cache get
+lake build
+lake env leanchecker --fresh Reduction
+```
+
+The unified entry is [Reduction.lean](formal/Reduction.lean). Its theorem
+`NMF.Reduction.correctness` proves output legality, satisfiability equivalence and
+recovery from every valid real factor pair. The final axiom audit contains only
+`propext`, `Classical.choice` and `Quot.sound`. See the
+[proof map](formal/README.md#proof-map) and
+[complete verification evidence](formal/evidence/entry/README.md) for details.
+
 No Codex session, research runner, sibling repository or local Docker is required.
 Standard Python and Lean dependencies are installed separately; dependency caches
 are not committed.

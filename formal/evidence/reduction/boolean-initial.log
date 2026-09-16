@@ -1,0 +1,9 @@
+✖ [510/583] Running Mathlib.Tactic.Omega
+error: no such file or directory (error code: 4294967294)
+  file: /Users/xiweipan/Codes/nonnegative-rank-two-approximation/formal/.lake/packages/mathlib/Mathlib/Tactic/Omega.lean
+✖ [582/583] Running BooleanReduction
+error: BooleanReduction.lean: bad import 'Mathlib.Tactic.Omega'
+Some required targets logged failures:
+- Mathlib.Tactic.Omega
+- BooleanReduction
+error: build failed

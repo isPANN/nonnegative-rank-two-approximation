@@ -1,0 +1,4 @@
+evidence/entry/ForwardCheck.lean:21:67: error: Expected type must not contain free variables
+  [(⟨0, ⋯⟩, ↑j == 1)].length ≤ 3
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
