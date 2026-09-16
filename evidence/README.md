@@ -4,9 +4,10 @@ These checks run against the exported live files, outside the research repositor
 They validate packaging and executable behavior; they do not constitute independent
 mathematical or external-kernel verification.
 
-Python checks use a fresh Python 3.12 virtual environment with the versions in
-`requirements.txt`, installed with uv. Each command runs from the repository root
-with `.venv/bin` first on PATH:
+The original export checks used a fresh Python 3.12 environment installed with uv
+from the requirements file retained in Git history. To reproduce the Python checks
+with the current project, run `uv sync --locked` from the repository root and
+prefix each Python command below with `uv run --locked`:
 
 | Command | Output |
 |---|---|

@@ -50,7 +50,7 @@ With the repository's Python environment installed, run:
 
 ```sh
 lake env lean --run evidence/entry/ForwardCheck.lean > evidence/entry/forward-outputs.jsonl
-uv run --no-project --directory .. python formal/evidence/entry/CompareForward.py
+uv run --locked --directory .. python formal/evidence/entry/CompareForward.py
 ```
 
 Outcome: all six cases match the Python construction in every rational matrix

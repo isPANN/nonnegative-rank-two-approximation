@@ -56,16 +56,16 @@ in [evidence](evidence/README.md).
 Use Python 3.12 and [uv](https://docs.astral.sh/uv/), then run from this directory:
 
 ```sh
-uv venv --python 3.12
-uv pip sync --python .venv/bin/python requirements.txt
-uv run --no-project python algorithm/check.py --self-test
-uv run --no-project python algorithm/check.py --candidate algorithm/algorithm.py
-uv run --no-project python algorithm/verify.py --candidate algorithm/algorithm.py
-uv run --no-project python algorithm/check-repair.py
+uv sync --locked
+uv run --locked python algorithm/check.py --self-test
+uv run --locked python algorithm/check.py --candidate algorithm/algorithm.py
+uv run --locked python algorithm/verify.py --candidate algorithm/algorithm.py
+uv run --locked python algorithm/check-repair.py
 ```
 
-uv manages the local `.venv`; no manual activation is needed. The requirements
-file pins the package versions used for the export checks.
+uv creates and manages the local `.venv`; no manual activation is needed.
+`pyproject.toml` declares the direct dependencies, `uv.lock` pins their complete
+dependency graph, and `.python-version` selects Python 3.12.
 `algorithm.py` reads a source JSON instance from standard input and writes the
 target JSON. With `--extract`, it reads an object containing `source` and
 `target_solution` and writes a Boolean assignment. See the contract for the
